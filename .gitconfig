@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+[remote "origin"]
+	url = git@github.com:JWLong/JWL.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[remote "Heroku"]
+	url = git@heroku.com:jwl.git
+	fetch = +refs/heads/*:refs/remotes/Heroku/*

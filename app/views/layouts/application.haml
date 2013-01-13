@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    %title JWL
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+    = favicon_link_tag
+  %body.page{:id => @body_id}
+    = render :file => 'layouts/_header'
+    = render :file => 'layouts/_navigation'
+    #content= yield
+    = render :file => 'layouts/_footer'

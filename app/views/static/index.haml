@@ -1,0 +1,29 @@
+%index
+  #page
+    #head
+      %h1
+        %small slideshow with strip effects
+      %p.headText
+        %strong jqFancyTransitions
+        is easy-to-use
+        %a{:href => "http://www.jquery.com", :target => "_blank"} jQuery
+        plugin for displaying your photos as slideshow with fancy transition effects.
+      %p.headText
+        %strong jqFancyTransitions
+        is compatible and fully tested with Safari 2+, Internet Explorer 6+, Firefox 2+, Google Chrome 3+, Opera 9+.
+      %br/
+      %p.download.headText
+        %a{:href => "http://workshop.rs/2009/12/image-gallery-with-fancy-transitions-effects/"} Documentation, Download and Discussion
+    #ftHolder
+      #ft
+        %img{:alt => "<i>Terrace View <a href='http://sniperyu.deviantart.com/'>by Marko Manojlovic</a></i>", :src => "#{asset_path('img3.jpg')}"}/
+        %a{:href => "http://sniperyu.deviantart.com/"}
+        %img{:alt => "NBG #1 <i><a href='http://picasaweb.google.com/azzazel'>by Goran Jovanovic</a></i>", :src => "#{asset_path('img2.jpg')}"}/
+        %a{:href => "http://picasaweb.google.com/azzazel"}
+        %img{:alt => "Navagio beach Zakynthos <i><a href='http://refer.istockphoto.com/ta.php?lc=058071042431004651&atid=39617%7CBannerID%3D39617%7CReferralMethod%3DLink&url=http%3A%2F%2Fwww.istockphoto.com%2Fsearch%2Fportfolio%2F1454875%2Fsource%2Fref'><img src='http://refer.istockphoto.com/traffic_record.php?lc=058071042431004651&atid=39617%7CBannerID%3D39617%7CReferralMethod%3DLink' border='0'/>by Ivan Jekic - iStockPhoto</a></i>", :src => "#{asset_path('img1.jpg')}"}/
+        %a{:href => "http://refer.istockphoto.com/ta.php?lc=058071042431004651&atid=39617%7CBannerID%3D39617%7CReferralMethod%3DLink&url=http%3A%2F%2Fwww.istockphoto.com%2Fsearch%2Fportfolio%2F1454875%2Fsource%2Fref"}
+        %img{:alt => "Blue Window <i><a href='http://www.igorsrdanovic.com'>by Igor Srdanovic</a></i>", :src => "#{asset_path('img4.jpg')}"}/
+        %a{:href => "http://www.igorsrdanovic.com"}
+    %br{:clear => "all"}/
+    :javascript
+      $('#ft').jqFancyTransitions({ navigation: true, links : true });
