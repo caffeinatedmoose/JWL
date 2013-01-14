@@ -6,12 +6,12 @@ common: &common
 
 development:
   <<: *common
-  database: service_development
+  database: jwl_development
   host: localhost
 
 test:
   <<: *common
-  database: service_development
+  database: jwl_development
   host: localhost
 
 production:
